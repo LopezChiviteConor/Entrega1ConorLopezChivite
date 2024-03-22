@@ -25,6 +25,26 @@ public class FuncionesTest {
 	System.out.println(String.format("Lista B %s - Lista A %s = %s", listaB, listaA, listaC));
 	List<String> listaStrings = List.of("Plantasia", "Symphony for a Spider Plant", "Baby's Tear Blues", "Ode To an African Violet");
 	System.out.println(String.format("String mas largo: %s", Funciones.ejercicioListas2(listaStrings)));
+	
+	//Tests de los apartados A, B y C de la defensa
+	Integer ValorFuncionP2 = Funciones.funcionP2(6, 5, 1);
+	System.out.println("FuncionP2 con valores n = 6, k = 5 y n = 1: " + ValorFuncionP2);
+	
+	Double ValorFuncionC2 = Funciones.funcionC2(5, 2);
+	System.out.println("FuncionC2 con valores n = 5 y k = 2: " + ValorFuncionC2);
+	
+	Double ValorFuncionS2 = Funciones.funcionS2(5, 2);
+	System.out.println("FuncionS2 con valores n = 5 y k = 2: " + ValorFuncionS2);
+	
+	/*Prueba de las restricciones, al quitar esta sección de comentario dará error.
+    Integer ValorFuncionP2 = Funciones.funcionP2(2, 5, 1);
+    Integer ValorFuncionP2 = Funciones.funcionP2(6, 2, 4);
+    
+    Integer ValorFuncionC2 = Funciones.funcionC2(5, 5);
+    
+    Integer ValorFuncionS2 = Funciones.funcionS2(2, 5);
+    */
+	
 	}
 	
 	public static void main(String[] args) {

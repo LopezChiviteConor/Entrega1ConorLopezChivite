@@ -122,6 +122,12 @@ public record Fecha(Integer año, Integer mes, Integer dia) {
 		return Objects.equals(año, other.año) && Objects.equals(dia, other.dia) && Objects.equals(mes, other.mes);
 	}
 	
+	//Representacion
+	@Override
+	public String toString() {
+		return this.diaSemana() + ", " + dia + " de " + this.nombreMes() + " de " + this.año();
+	}
+	
 	//Metodos
 	
 	public static boolean esAñoBisiesto(Integer año) {
@@ -134,6 +140,7 @@ public record Fecha(Integer año, Integer mes, Integer dia) {
 		}
 	}
 	
+
 	public static Integer diasEnMes(Integer año, Integer mes) {
 		Integer dias = 0;
 		switch (mes) {
@@ -174,4 +181,13 @@ public record Fecha(Integer año, Integer mes, Integer dia) {
         Integer h = (dia + ((13 * (mes + 1)) / 5) + k + (k / 4) + (j / 4) + (5 * j)) % 7;
         return h;
 	}
+	
+	//Defensa Apartado D
+	public static Fecha restarDiasFechaDada(Fecha fecha, int numDias) {
+		Preconditions.checkArgument(numDias < 999, "numDias no puede tener más de 3 digitos");
+		Integer num = Integer.valueOf(numDias);
+		Fecha resultado = fecha.restarDias(num);
+		return resultado; 
+	}
+	
 }

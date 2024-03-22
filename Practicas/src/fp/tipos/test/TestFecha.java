@@ -51,5 +51,14 @@ public class TestFecha {
  
         System.out.println("\nFecha.diferenciaEnDias(fechaSumada): " + diferenciaEnDias);
         System.out.println("ChronoUnit.DAYS.between(localDate, localDateSumada): " + diferenciaEnDiasLocalDate);
+        
+        //Defensa Test del apartado D
+        
+        /*Prueba de las restricciones, al quitar esta sección de comentario dará error.
+        Fecha RestarDiasFechaDada = Fecha.restarDiasFechaDada(fecha, 1000);
+        */
+        
+        Fecha RestarDiasFechaDada = Fecha.restarDiasFechaDada(fecha, 10);
+        System.out.println("\n Fecha.restarDiasFechaDada, restando a fecha 10 dias " + RestarDiasFechaDada);
     }
 }
