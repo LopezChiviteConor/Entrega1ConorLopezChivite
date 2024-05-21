@@ -6,6 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="entregas_anteriores"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/Java_v1">
 		<attributes>
 			<attribute name="module" value="true"/>
