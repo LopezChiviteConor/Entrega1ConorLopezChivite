@@ -70,7 +70,7 @@ public class ExamenEntrega2 {
 		
 		//Revision de las restricciones de removeColumIndex (debe dar fallo):
 		//System.out.println(ExamenEntrega2.removeColumIndex(d_personas, 8));
-		//System.out.println(ExamenEntrega2.removeColumIndex(d_personas, -1));
+		//System.out.println(ExamenEntrega2.removeColumIndex(d_personas, -1));asd
 		
 		
 		System.out.println("Division a partir de la columna 3 del dataframe Personas:");
