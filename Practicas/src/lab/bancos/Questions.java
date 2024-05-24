@@ -42,7 +42,8 @@ public class Questions {
 		return clienteEstrella.get();
 		}
 		
-	
+
+
 	//	Cantidad total de los crétditos gestionados por un empleado
 	public static Double cantidadPrestamosEmpledado(Banco banco,String dni) {
 		Set<String> dniEmpleados = banco.empleados().todos().stream()
@@ -87,6 +88,9 @@ public class Questions {
 		Set<Prestamo> prestamos = banco.prestamos().todos();
 		return Stream2.groupingReduce(prestamos.stream(), c -> new Info2(c.fechaComienzo().getMonth().getValue(), c.fechaComienzo().getYear()), (a, b) -> a + b, d -> 1 );
 	}
+	
+	//Metodos Defensa
+	
 	
 	public static void test(Banco banco) {
 		System.out.println(Questions.vencimientoDePrestamosDeCliente(banco, "70952354E"));
